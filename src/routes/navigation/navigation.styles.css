@@ -1,0 +1,38 @@
+.navigation-container {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  @media screen and (max-width: 800px) {
+    height: 60px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+}
+.logo-container {
+  height: 50px;
+  width: 50px;
+  margin-top: -85px;
+  margin-left: 50px;
+  @media screen and (max-width: 800px) {
+    width: 50px;
+    padding: 0;
+  }
+}
+.nav-links {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  @media screen and (max-width: 800px) {
+    width: 80%;
+  }
+}
+.nav-link {
+  padding: 10px 15px;
+  cursor: pointer;
+}

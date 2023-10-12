@@ -1,0 +1,15 @@
+.item-height {
+  height: 32px;
+  border-radius: 5px;
+}
+
+.text-style {
+  font-size: 14px;
+  height: 25px;
+}
+.top-margin {
+  margin-top: 25px;
+}
+.button-size {
+  max-width: 200px;
+}

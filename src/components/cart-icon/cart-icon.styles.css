@@ -1,0 +1,23 @@
+.cartIcon-container {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /*
+ 
+
+  cursor: pointer;
+  background-color: aqua; */
+}
+.svg-icon {
+  width: 24px;
+  height: 24px;
+}
+.item-count {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  bottom: 12px;
+}
