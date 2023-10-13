@@ -9,20 +9,20 @@ import {
 import "./checkout-item.styles.css";
 
 const CheckoutItem = ({ cartItem }) => {
-  const { title, image, price, quantity } = cartItem;
+  const { e, quantity } = cartItem;
   const dispatch = useDispatch();
 
   const clearItemHandler = () => dispatch(clearItemFromCart(cartItem));
   const addItemHandler = () => dispatch(addItemToCart(cartItem));
   const removeItemHandler = () => dispatch(removeItemFromCart(cartItem));
-
+  console.log("cartItems", cartItem);
   return (
     <div className="checkout-header w-100">
       <div className="col">
-        <img src={image} alt={`${title}`} height={"60"} />
+        <img src={e.images[0]} alt={`${e.title}`} height={"60"} />
       </div>
       <div className="col-3 me-2">
-        <span className="text-size ">{title} </span>
+        <span className="text-size ">{e.title} </span>
       </div>
 
       <div
@@ -37,7 +37,7 @@ const CheckoutItem = ({ cartItem }) => {
         </div>
       </div>
 
-      <div className="col"> {price}</div>
+      <div className="col"> {e.price}</div>
       <div className="col ">
         <button
           className=" btn btn-outline-danger button-remove"
