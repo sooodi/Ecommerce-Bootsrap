@@ -15,7 +15,7 @@ const CheckoutItem = ({ cartItem }) => {
   const clearItemHandler = () => dispatch(clearItemFromCart(cartItem));
   const addItemHandler = () => dispatch(addItemToCart(cartItem));
   const removeItemHandler = () => dispatch(removeItemFromCart(cartItem));
-  console.log("cartItems", cartItem);
+
   return (
     <div className="checkout-header w-100">
       <div className="col">
