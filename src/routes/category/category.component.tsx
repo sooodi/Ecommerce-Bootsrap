@@ -9,6 +9,7 @@ import PaginationComponent from "../../components/pagination/Pagination";
 import { Paginate } from "../../utils/functions";
 import usePagination from "../../hook/usePagination";
 import EmptyPage from "../../components/emptyPage/EmptyPage";
+import Spinner from "../../components/spinner/spinner.component";
 
 const Category = () => {
   const { category } = useParams();
@@ -43,6 +44,7 @@ const Category = () => {
       <h1 className="card-title text-center">{category?.toUpperCase()}</h1>
       <div className="container pb-5 px-lg-5">
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 px-md-5">
+          {loading && <Spinner />}
           {productPart &&
             productPart.map((product) => (
               <ProductCard key={product.id} product={product} />

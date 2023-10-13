@@ -6,9 +6,9 @@ const EmptyPage = () => (
     <div className="p-16">
       <p className="h-10">🪴 OOps!, Coming Soon</p>
       <hr />
-      <h1 className="text-center" role="heading">
+      <h1 className="text-center">
         <br />
-        <span role="heading">We have not added any product !</span>
+        <span>We have not added any product !</span>
       </h1>
     </div>
   </div>

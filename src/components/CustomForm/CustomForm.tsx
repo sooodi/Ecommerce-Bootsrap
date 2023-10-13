@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
 import { useDispatch, useSelector } from "react-redux";
+
 import { filterObjType } from "../../utils/common.type";
 import {
   PRODUCT_INITIAL_STATE,
@@ -10,9 +10,8 @@ import {
 import { getCategories } from "../../store/product/product.selector";
 
 import "./CustomForm.style.css";
-type Props = {};
 
-const CustomForm = ({}: Props) => {
+const CustomForm = () => {
   const [valueFilter, setValueFilter] = useState<filterObjType>({
     Name: "",
     Type: "All",

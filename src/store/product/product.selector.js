@@ -36,8 +36,6 @@ export const getCategories = createSelector([selectProduct], (allProducts) => {
   const activityOptions = ["All"];
 
   allProducts.forEach((e) => {
-    let option = e.category.name;
-
     if (!activityOptions.find((item) => item === e.category.name)) {
       activityOptions.push(e.category.name);
     }
